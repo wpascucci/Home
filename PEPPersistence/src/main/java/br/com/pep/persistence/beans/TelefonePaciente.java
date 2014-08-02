@@ -1,0 +1,49 @@
+package br.com.pep.persistence.beans;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="tb_fone_paciente")
+public class TelefonePaciente implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1107339784337548194L;
+	@Id
+	@GeneratedValue
+	private int id;
+	private int ddd;
+	private String numero;
+	private String tipo;
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public int getDdd() {
+		return ddd;
+	}
+	public void setDdd(int ddd) {
+		this.ddd = ddd;
+	}
+	public String getNumero() {
+		return numero;
+	}
+	public void setNumero(String numero) {
+		this.numero = numero;
+	}
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}	
+}

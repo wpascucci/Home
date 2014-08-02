@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+    
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/prontuario"/>
+        <property name="username" value="root"/>
+        <property name="password" value="letme.1n"/>        
+    </bean>
+    
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+		<property name="packagesToScan" value="br.com.pep.persistence.beans" />
+        <property name="hibernateProperties">
+            <value>
+                hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+                hibernate.hbm2ddl.auto=update
+            </value>
+        </property>
+    </bean>    
+    
+    <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>    
+    
+    <tx:annotation-driven/>
+    
+<!-- 	<bean id="cidRepository" class="br.com.pep.persistencia.dao.CidDao">	 -->
+<!-- 		<constructor-arg> -->
+<!-- 			<value>br.com.pep.persistencia.bean.Cid</value> -->
+<!-- 		</constructor-arg>	 -->
+<!-- 		<property name="factory" ref="sessionFactory"/> -->
+<!-- 	</bean> -->
+
+	<bean id="pacienteRepository" class="br.com.pep.persistencia.dao.PacienteDao">
+		<constructor-arg>
+			<value>br.com.pep.persistence.beans.Paciente</value>
+		</constructor-arg>
+		<property name="factory" ref="sessionFactory"/>
+	</bean>
+	    
+</beans>
