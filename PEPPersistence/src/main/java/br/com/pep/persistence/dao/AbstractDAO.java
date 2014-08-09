@@ -3,21 +3,22 @@ package br.com.pep.persistence.dao;
 import java.io.Serializable;
 import java.util.List;
 
+import javax.inject.Inject;
+import javax.persistence.EntityManager;
 import javax.persistence.PersistenceException;
-
-import org.hibernate.Criteria;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.criterion.Criterion;
-import org.springframework.stereotype.Component;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
 
 import br.com.pep.persistence.interfaces.IDao;
 
-@Component
 public abstract class AbstractDAO <Type, ObjectIdType extends Serializable> implements IDao<Type, ObjectIdType> {
 
 	private Class<Type> entityClass;
-	private SessionFactory factory;
+		
+	@Inject
+	protected EntityManager em;
 	
 	public AbstractDAO(Class<Type> entityClass) {
 		this.entityClass = entityClass;
@@ -30,58 +31,40 @@ public abstract class AbstractDAO <Type, ObjectIdType extends Serializable> impl
 	public void setEntityClass(Class<Type> entityClass) {
 		this.entityClass = entityClass;
 	}
-
-	public void setFactory(SessionFactory factory) {
-		this.factory = factory;
-	}
-
-	public SessionFactory getFactory() {
-		return factory;
-	}
-
-	protected Session getSession() {
-		return getFactory().getCurrentSession();
-	}
 	
 	public Type save(Type entity) {
-		this.getSession().save(entity);
+		em.persist(entity);
 		return entity;
 	}	
 	
-	public Type saveOrUpdate(Type entity) {
-		this.getSession().saveOrUpdate(entity);
-		return entity;
-	}
-	
 	public void delete(Type entity) {
-		this.getSession().delete(entity);		
+		em.remove(entity);
 	}
 	
-	@SuppressWarnings("unchecked")
 	public Type findById(ObjectIdType id) {
 		if(id == null)
-			throw new PersistenceException("Id may not be null.");
-		return (Type)this.getSession().load(getEntityClass(), id);
+			throw new PersistenceException("Id may not be null.");		
+		return em.find(getEntityClass(), id);
 	}
 
-	@SuppressWarnings("unchecked")
-	public List<Type> getByCriteria(Criterion...criterions) {
+	public List<Type> getByCriteria(Predicate...predicates) {
 		
-		Criteria criteria = this.getSession().createCriteria(getEntityClass());
-		for(Criterion criterium : criterions){
-			criteria.add(criterium);
-		}
-		return criteria.list();
+		CriteriaBuilder builder = em.getCriteriaBuilder();
+		CriteriaQuery<Type> criteria = builder.createQuery(getEntityClass());
+		Root<Type> objRoot = criteria.from(getEntityClass());
+		criteria.select(objRoot);
+		criteria.where(predicates);
+		return em.createQuery(criteria).getResultList();
 	}
 
-	@SuppressWarnings("unchecked")
-	public Type getUniqueByCriteria(Criterion...criterions) {
+	public Type getUniqueByCriteria(Predicate...predicates) {
 		
-		Criteria criteria = this.getSession().createCriteria(getEntityClass());
-		for(Criterion criterium : criterions){
-			criteria.add(criterium);
-		}
-		return (Type)criteria.uniqueResult();
+		CriteriaBuilder builder = em.getCriteriaBuilder();
+		CriteriaQuery<Type> criteria = builder.createQuery(getEntityClass());
+		Root<Type> objRoot = criteria.from(getEntityClass());
+		criteria.select(objRoot);	
+		criteria.where(predicates);
+		return em.createQuery(criteria).getSingleResult();
 	}
 	
 }
