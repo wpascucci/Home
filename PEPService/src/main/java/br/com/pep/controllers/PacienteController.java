@@ -9,19 +9,22 @@ import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Put;
-import br.com.pep.persistence.beans.Paciente;
+import br.com.caelum.vraptor.Result;
+import br.com.pep.persistence.dao.PacienteDao;
+import br.com.pep.persistence.domain.Paciente;
 import br.com.pep.persistence.interfaces.IPaciente;
 
 @Controller
 public class PacienteController {
 		
-	@Inject
 	private IPaciente pacienteDao;
 	
 	public PacienteController(){
+		this(null);
 	}
 	
-	public PacienteController(IPaciente pacienteDao) {
+	@Inject
+	public PacienteController(PacienteDao pacienteDao) {
 		this.pacienteDao = pacienteDao;
 	}
 		

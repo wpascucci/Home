@@ -5,20 +5,20 @@
   
     <persistence-unit name="default" transaction-type="RESOURCE_LOCAL">  
         <provider>org.hibernate.ejb.HibernatePersistence</provider>  
-        <class>br.com.pep.persistence.beans.Cid</class>
-        <class>br.com.pep.persistence.beans.Endereco</class>
-        <class>br.com.pep.persistence.beans.Especialidade</class>
-        <class>br.com.pep.persistence.beans.EspecialidadeProfissional</class>
-        <class>br.com.pep.persistence.beans.ItemPedidoExame</class>
-        <class>br.com.pep.persistence.beans.ItemPreescricaoMedica</class>
-        <class>br.com.pep.persistence.beans.Medicamento</class>
-        <class>br.com.pep.persistence.beans.Paciente</class>
-        <class>br.com.pep.persistence.beans.PedidoExame</class>
-        <class>br.com.pep.persistence.beans.PreescricaoMedica</class>
-        <class>br.com.pep.persistence.beans.Procedimento</class>
-        <class>br.com.pep.persistence.beans.Profissional</class>
-        <class>br.com.pep.persistence.beans.Prontuario</class>
-        <class>br.com.pep.persistence.beans.TelefonePaciente</class>  
+        <class>br.com.pep.persistence.domain.Cid</class>
+        <class>br.com.pep.persistence.domain.Endereco</class>
+        <class>br.com.pep.persistence.domain.Especialidade</class>
+        <class>br.com.pep.persistence.domain.EspecialidadeProfissional</class>
+        <class>br.com.pep.persistence.domain.ItemPedidoExame</class>
+        <class>br.com.pep.persistence.domain.ItemPreescricaoMedica</class>
+        <class>br.com.pep.persistence.domain.Medicamento</class>
+        <class>br.com.pep.persistence.domain.Paciente</class>
+        <class>br.com.pep.persistence.domain.PedidoExame</class>
+        <class>br.com.pep.persistence.domain.PreescricaoMedica</class>
+        <class>br.com.pep.persistence.domain.Procedimento</class>
+        <class>br.com.pep.persistence.domain.Profissional</class>
+        <class>br.com.pep.persistence.domain.Prontuario</class>
+        <class>br.com.pep.persistence.domain.TelefonePaciente</class>  
           
         <properties>  
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>  
