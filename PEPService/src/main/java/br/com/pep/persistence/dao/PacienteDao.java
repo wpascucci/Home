@@ -1,5 +1,8 @@
 package br.com.pep.persistence.dao;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import br.com.pep.persistence.domain.Paciente;
 import br.com.pep.persistence.interfaces.IPaciente;
 
@@ -15,33 +18,16 @@ public class PacienteDao extends Dao<Paciente> implements IPaciente {
 
 	@Override
 	public Paciente findByCPF(String cpf) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		Map<String, String> predicates = new HashMap<String, String>();
+		predicates.put("cpf", cpf);		
+		return getUniqueByCriteria(predicates);
 	}
 
 	@Override
 	public Paciente findByRegistro(String registro) {
-		// TODO Auto-generated method stub
-		return null;
+		Map<String, String> predicates = new HashMap<String, String>();
+		predicates.put("registro", registro);		
+		return getUniqueByCriteria(predicates);
 	}
-
-//	public Paciente findByCPF(String cpf) {
-//		
-//		CriteriaBuilder builder = em.getCriteriaBuilder();
-//		CriteriaQuery<Paciente> criteria = builder.createQuery(Paciente.class);
-//		Root<Paciente> objRoot = criteria.from(Paciente.class);		
-//		Predicate predicate = builder.equal(objRoot.get("cpf"), cpf);		
-//		Paciente paciente = getUniqueByCriteria(predicate);
-//		return paciente;
-//	}
-//
-//	public Paciente findByRegistro(String registro) {
-//		
-//		CriteriaBuilder builder = em.getCriteriaBuilder();
-//		CriteriaQuery<Paciente> criteria = builder.createQuery(Paciente.class);
-//		Root<Paciente> objRoot = criteria.from(Paciente.class);		
-//		Predicate predicate = builder.equal(objRoot.get("codigoRegistro"), registro);			
-//		Paciente paciente = getUniqueByCriteria(predicate);
-//		return paciente;
-//	}
 }

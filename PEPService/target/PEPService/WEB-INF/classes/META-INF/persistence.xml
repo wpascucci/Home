@@ -1,0 +1,37 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"  
+    version="2.0">  
+  
+    <persistence-unit name="default" transaction-type="RESOURCE_LOCAL">  
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>  
+        <class>br.com.pep.persistence.domain.Cid</class>
+        <class>br.com.pep.persistence.domain.Endereco</class>
+        <class>br.com.pep.persistence.domain.Especialidade</class>
+        <class>br.com.pep.persistence.domain.EspecialidadeProfissional</class>
+        <class>br.com.pep.persistence.domain.ItemPedidoExame</class>
+        <class>br.com.pep.persistence.domain.ItemPreescricaoMedica</class>
+        <class>br.com.pep.persistence.domain.Medicamento</class>
+        <class>br.com.pep.persistence.domain.Paciente</class>
+        <class>br.com.pep.persistence.domain.PedidoExame</class>
+        <class>br.com.pep.persistence.domain.PreescricaoMedica</class>
+        <class>br.com.pep.persistence.domain.Procedimento</class>
+        <class>br.com.pep.persistence.domain.Profissional</class>
+        <class>br.com.pep.persistence.domain.Prontuario</class>
+        <class>br.com.pep.persistence.domain.TelefonePaciente</class>  
+          
+        <properties>  
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>  
+            <!-- poderia ser: create,create-drop -->  
+            <property name="hibernate.hbm2ddl.auto" value="update"/>  
+            <property name="hibernate.show_sql" value="true"/>  
+            <property name="hibernate.format_sql" value="true"/>  
+              
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>  
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/prontuario"/>  
+            <property name="javax.persistence.jdbc.user" value="root"/>  
+            <property name="javax.persistence.jdbc.password" value="letme.1n"/>  
+        </properties>  
+    </persistence-unit>  
+  
+</persistence>

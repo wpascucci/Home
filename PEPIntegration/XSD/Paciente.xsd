@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2014 rel. 2 sp1 (http://www.altova.com) by William (student) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<xs:element name="Paciente">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Id" type="xs:int"/>
+				<xs:element name="Cpf" type="xs:int"/>
+				<xs:element name="Nome" type="xs:string"/>
+				<xs:element name="Genero" type="xs:string"/>
+				<xs:element name="CodigoRegistro" type="xs:int"/>
+				<xs:element name="TipoSanguineo" type="xs:string"/>
+				<xs:element name="Enderecos" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Id" type="xs:int"/>
+							<xs:element name="Cep" type="xs:string"/>
+							<xs:element name="Cidade" type="xs:string"/>
+							<xs:element name="Estado" type="xs:string"/>
+							<xs:element name="Endereco" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Telefones" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Id" type="xs:int"/>
+							<xs:element name="Ddd" type="xs:int"/>
+							<xs:element name="Numero" type="xs:int"/>
+							<xs:element name="Tipo" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
