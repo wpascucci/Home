@@ -3,7 +3,10 @@ package br.com.pep.controllers;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.enterprise.inject.Produces;
 import javax.inject.Inject;
+
+import com.google.common.net.MediaType;
 
 import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Get;
@@ -37,7 +40,8 @@ public class PacienteController {
 	
 	@Post("/AddPaciente")
 	public void addPaciente(Paciente paciente) {
-		pacienteDao.save(paciente);
+		Paciente output = pacienteDao.save(paciente);
+		result.use(Results.xml()).from(output, "paciente").serialize();
 	}
 	
 	@Put("/UpdatePaciente")
@@ -50,14 +54,13 @@ public class PacienteController {
 		ArrayList<Paciente> pacientes = new ArrayList<Paciente>();
 		pacientes.add(pacienteDao.findById(1));
 		//result.include("message", "Vai que Vai.");
-		return pacientes;		
+		return pacientes;
 	}
 	
-	@Get("/getTeste")
+	@Post("/getTeste")
 	public void getTeste() {
 		ArrayList<Paciente> pacientes = new ArrayList<Paciente>();
 		pacientes.add(pacienteDao.findById(1));
-		//result.include("pacientes", pacientes);
-		result.use(Results.xml()).from(pacientes, "pacientes");
+		result.use(Results.xml()).from(pacientes, "pacientes").serialize();
 	}
 }

@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.6 
 // Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: PM.09.07 às 10:38:51 PM BRT 
+// Gerado em: PM.09.13 às 01:18:15 PM BRT 
 //
 
 
@@ -37,27 +37,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Paciente }
+     * Create an instance of {@link Pacientes }
      * 
      */
-    public Paciente createPaciente() {
-        return new Paciente();
+    public Pacientes createPacientes() {
+        return new Pacientes();
     }
 
     /**
-     * Create an instance of {@link Paciente.Enderecos }
+     * Create an instance of {@link Pacientes.Paciente }
      * 
      */
-    public Paciente.Enderecos createPacienteEnderecos() {
-        return new Paciente.Enderecos();
-    }
-
-    /**
-     * Create an instance of {@link Paciente.Telefones }
-     * 
-     */
-    public Paciente.Telefones createPacienteTelefones() {
-        return new Paciente.Telefones();
+    public Pacientes.Paciente createPacientesPaciente() {
+        return new Pacientes.Paciente();
     }
 
 }

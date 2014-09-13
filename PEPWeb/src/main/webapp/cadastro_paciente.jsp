@@ -516,7 +516,7 @@
 						</div>
 						<div class="portlet-body form">
 							<!-- #######COLOCAR A ACTION AQUI####### -->
-							<form action="<c:url value='/AddPaciente'/>" class="form-horizontal" id="submit_form" method="POST">
+							<form action="<c:url value='/PacienteSave'/>" class="form-horizontal" id="submit_form" method="POST">
 								<div class="form-wizard">	
 									<div class="form-body">
 										<ul class="nav nav-pills nav-justified steps">
