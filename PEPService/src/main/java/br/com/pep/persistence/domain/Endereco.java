@@ -9,8 +9,11 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
 @Entity
 @Table(name="tb_endereco_paciente")
+@XStreamAlias("endereco")
 public class Endereco implements Serializable {
 	
 	/**

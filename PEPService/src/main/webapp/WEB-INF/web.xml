@@ -24,7 +24,7 @@
 
 	<context-param> 
 		<param-name>br.com.caelum.vraptor.packages</param-name> 
-		<param-value>br.com.caelum.vraptor.util.jpa</param-value> 
+		<param-value>br.com.caelum.vraptor.util.jpa,br.com.caelum.vraptor.restfulie,br.com.caelum.vraptor.deserialization.gson</param-value> 
 	</context-param> 
 
 </web-app>

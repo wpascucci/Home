@@ -148,90 +148,6 @@
 						</li>
 					</ul>
 				</li>
-				<li>
-					<a href="javascript:;">
-					<i class="icon-basket"></i>
-					<span class="title">eCommerce</span>
-					<span class="arrow "></span>
-					</a>
-					<ul class="sub-menu">
-						<li>
-							<a href="ecommerce_index.html">
-							<i class="icon-home"></i>
-							Dashboard</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:;">
-					<i class="icon-rocket"></i>
-					<span class="title">Page Layouts</span>
-					<span class="arrow "></span>
-					</a>
-					<ul class="sub-menu">
-						<li>
-							<a href="layout_horizontal_sidebar_menu.html">
-							Horizontal & Sidebar Menu</a>
-						</li>
-					</ul>
-				</li>
-				<!-- BEGIN FRONTEND THEME LINKS -->
-				<li>
-					<a href="javascript:;">
-					<i class="icon-star"></i>
-					<span class="title">
-					Frontend Themes </span>
-					<span class="arrow">
-					</span>
-					</a>
-					<ul class="sub-menu">
-						<li class="tooltips" data-container="body" data-placement="right" data-html="true" data-original-title="Complete eCommerce Frontend Theme For Metronic Admin">
-							<a href="http://keenthemes.com/preview/index.php?theme=metronic_frontend&page=shop-index.html" target="_blank">
-							<span class="title">
-							eCommerce Frontend </span>
-							</a>
-						</li>
-						<li class="tooltips" data-container="body" data-placement="right" data-html="true" data-original-title="Complete Corporate Frontend Theme For Metronic Admin">
-							<a href="http://keenthemes.com/preview/index.php?theme=metronic_frontend" target="_blank">
-							<span class="title">
-							Corporate Frontend </span>
-							</a>
-						</li>
-						<li class="tooltips" data-container="body" data-placement="right" data-html="true" data-original-title="Complete One Page Parallax Frontend Theme For Metronic Admin">
-							<a href="http://keenthemes.com/preview/index.php?theme=metronic_frontend&page=onepage-index.html" target="_blank">
-							<span class="title">
-							One Page Parallax Frontend </span>
-							</a>
-						</li>
-					</ul>
-				</li>
-				<!-- END FRONTEND THEME LINKS -->
-				<li>
-					<a href="javascript:;">
-					<i class="icon-diamond"></i>
-					<span class="title">UI Features</span>
-					<span class="arrow "></span>
-					</a>
-					<ul class="sub-menu">
-						<li>
-							<a href="ui_general.html">
-							General Components</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:;">
-					<i class="icon-puzzle"></i>
-					<span class="title">UI Components</span>
-					<span class="arrow "></span>
-					</a>
-					<ul class="sub-menu">
-						<li>
-							<a href="components_pickers.html">
-							Pickers</a>
-						</li>
-					</ul>
-				</li>
 				<li class="active open">
 					<a href="javascript:;">
 					<i class="icon-user"></i>
@@ -241,230 +157,27 @@
 					</a>
 					<ul class="sub-menu">
 						<li class="active">
-							<a href="cadastro_paciente.html">
+							<a href="cadastro_paciente.jsp">
 							Cadastro do Paciente</a>
 						</li>
 					</ul>
 				</li>
 				<li>
 					<a href="javascript:;">
-					<i class="icon-logout"></i>
-					<span class="title">Quick Sidebar</span>
-					<span class="arrow "></span>
-					</a>
-					<ul class="sub-menu">
-
-						<li>
-							<a href="quick_sidebar_push_content.html">
-							Push Content</a>
-						</li>
-						<li>
-							<a href="quick_sidebar_over_content.html">
-							Over Content</a>
-						</li>
-						<li>
-							<a href="quick_sidebar_over_content_transparent.html">
-							Over Content & Transparent</a>
-						</li>
-						<li>
-							<a href="quick_sidebar_on_boxed_layout.html">
-							Boxed Layout</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:;">
-					<i class="icon-envelope-open"></i>
-					<span class="title">Email Templates</span>
-					<span class="arrow "></span>
-					</a>
-					<ul class="sub-menu">
-						<li>
-							<a href="email_newsletter.html">
-							Responsive Newsletter<br>
-							 Email Template</a>
-						</li>
-						<li>
-							<a href="email_system.html">
-							Responsive System<br>
-							 Email Template</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:;">
-					<i class="icon-docs"></i>
-					<span class="title">Pages</span>
-					<span class="arrow "></span>
-					</a>
-					<ul class="sub-menu">
-						<li>
-							<a href="page_portfolio.html">
-							<i class="icon-feed"></i>
-							<span class="badge badge-warning badge-roundless">new</span>Portfolio</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:;">
-					<i class="icon-present"></i>
-					<span class="title">Extra</span>
-					<span class="arrow "></span>
-					</a>
-					<ul class="sub-menu">
-						<li>
-							<a href="extra_profile.html">
-							User Profile</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:;">
-					<i class="icon-folder"></i>
-					<span class="title">Multi Level Menu</span>
-					<span class="arrow "></span>
-					</a>
-					<ul class="sub-menu">
-						<li>
-							<a href="javascript:;">
-							<i class="icon-settings"></i> Item 1 <span class="arrow"></span>
-							</a>
-							<ul class="sub-menu">
-								<li>
-									<a href="javascript:;">
-									<i class="icon-user"></i>
-									Sample Link 1 <span class="arrow"></span>
-									</a>
-									<ul class="sub-menu">
-										<li>
-											<a href="#"><i class="icon-power"></i> Sample Link 1</a>
-										</li>
-										<li>
-											<a href="#"><i class="icon-paper-plane"></i> Sample Link 1</a>
-										</li>
-										<li>
-											<a href="#"><i class="icon-star"></i> Sample Link 1</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href="#"><i class="icon-camera"></i> Sample Link 1</a>
-								</li>
-								<li>
-									<a href="#"><i class="icon-link"></i> Sample Link 2</a>
-								</li>
-								<li>
-									<a href="#"><i class="icon-pointer"></i> Sample Link 3</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="javascript:;">
-							<i class="icon-globe"></i> Item 2 <span class="arrow"></span>
-							</a>
-							<ul class="sub-menu">
-								<li>
-									<a href="#"><i class="icon-tag"></i> Sample Link 1</a>
-								</li>
-								<li>
-									<a href="#"><i class="icon-pencil"></i> Sample Link 1</a>
-								</li>
-								<li>
-									<a href="#"><i class="icon-graph"></i> Sample Link 1</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">
-							<i class="icon-bar-chart"></i>
-							Item 3 </a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:;">
-					<i class="icon-briefcase"></i>
-					<span class="title">Data Tables</span>
-					<span class="arrow "></span>
-					</a>
-					<ul class="sub-menu">
-						<li>
-							<a href="table_basic.html">
-							Basic Datatables</a>
-						</li>
-						<li>
-							<a href="table_responsive.html">
-							Responsive Datatables</a>
-						</li>
-						<li>
-							<a href="table_managed.html">
-							Managed Datatables</a>
-						</li>
-						<li>
-							<a href="table_editable.html">
-							Editable Datatables</a>
-						</li>
-						<li>
-							<a href="table_advanced.html">
-							Advanced Datatables</a>
-						</li>
-						<li>
-							<a href="table_ajax.html">
-							Ajax Datatables</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:;">
 					<i class="icon-wallet"></i>
-					<span class="title">Portlets</span>
+					<span class="title">Prontuario</span>
 					<span class="arrow "></span>
 					</a>
 					<ul class="sub-menu">
 						<li>
 							<a href="portlet_general.html">
-							General Portlets</a>
+							Novo</a>
 						</li>
 						<li>
 							<a href="portlet_general2.html">
-							<span class="badge badge-roundless badge-danger">new</span>New Portlets #1</a>
-						</li>
-						<li>
-							<a href="portlet_general3.html">
-							<span class="badge badge-roundless badge-danger">new</span>New Portlets #2</a>
-						</li>
-						<li>
-							<a href="portlet_ajax.html">
-							Ajax Portlets</a>
-						</li>
-						<li>
-							<a href="portlet_draggable.html">
-							Draggable Portlets</a>
+							Localizar</a>
 						</li>
 					</ul>
-				</li>
-				<li>
-					<a href="javascript:;">
-					<i class="icon-pointer"></i>
-					<span class="title">Maps</span>
-					<span class="arrow "></span>
-					</a>
-					<ul class="sub-menu">
-						<li>
-							<a href="maps_google.html">
-							Google Maps</a>
-						</li>
-						<li>
-							<a href="maps_vector.html">
-							Vector Maps</a>
-						</li>
-					</ul>
-				</li>
-				<li class="last ">
-					<a href="charts.html">
-					<i class="icon-bar-chart"></i>
-					<span class="title">Visual Charts</span>
-					</a>
 				</li>
 			</ul>
 			<!-- END SIDEBAR MENU -->
@@ -476,7 +189,7 @@
 		<div class="page-content">
 			<!-- BEGIN PAGE HEADER-->
 			<h3 class="page-title">
-			Prontuario Eletronico do Paciente <small>Cadastro do Paciente</small>
+			Prontu&aacute;rio Eletrônico do Paciente <small>Cadastro do Paciente</small>
 			</h3>
 			<div class="page-bar">
 				<ul class="page-breadcrumb">
@@ -575,7 +288,7 @@
 													<div class="col-md-4">
 														<input type="text" class="form-control" name="username"/>
 														<span class="help-block">
-														Digite seu nome de usuario </span>
+														Digite o nome de usuario </span>
 													</div>
 												</div>
 												<div class="form-group">
@@ -618,7 +331,7 @@
 													<div class="col-md-4">
 														<input type="text" class="form-control" name="paciente.nome"/>
 														<span class="help-block">
-														Digite seu nome completo </span>
+														Digite o nome completo do Paciente </span>
 													</div>
 												</div>
 												<div class="form-group">
@@ -626,9 +339,9 @@
 													* </span>
 													</label>
 													<div class="col-md-4">
-														<input type="text" class="form-control" name="paciente.cpf"/>
+														<input type="text" placeholder="000.000.000-00" maxlength="11" class="form-control" name="paciente.cpf"/>
 														<span class="help-block">
-														Digite seu CPF </span>
+														Digite o CPF: e.g 123.456.789-00</span>
 													</div>
 												</div>
 												<div class="form-group">
@@ -672,309 +385,53 @@
 															<option value="B-">B-</option>
 															<option value="AB-">AB-</option>
 	                                                    </select>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="control-label col-md-3">Country</label>
-													<div class="col-md-4">
-														<select name="country" id="country_list" class="form-control">
-															<option value=""></option>
-															<option value="AF">Afghanistan</option>
-															<option value="AL">Albania</option>
-															<option value="DZ">Algeria</option>
-															<option value="AS">American Samoa</option>
-															<option value="AD">Andorra</option>
-															<option value="AO">Angola</option>
-															<option value="AI">Anguilla</option>
-															<option value="AQ">Antarctica</option>
-															<option value="AR">Argentina</option>
-															<option value="AM">Armenia</option>
-															<option value="AW">Aruba</option>
-															<option value="AU">Australia</option>
-															<option value="AT">Austria</option>
-															<option value="AZ">Azerbaijan</option>
-															<option value="BS">Bahamas</option>
-															<option value="BH">Bahrain</option>
-															<option value="BD">Bangladesh</option>
-															<option value="BB">Barbados</option>
-															<option value="BY">Belarus</option>
-															<option value="BE">Belgium</option>
-															<option value="BZ">Belize</option>
-															<option value="BJ">Benin</option>
-															<option value="BM">Bermuda</option>
-															<option value="BT">Bhutan</option>
-															<option value="BO">Bolivia</option>
-															<option value="BA">Bosnia and Herzegowina</option>
-															<option value="BW">Botswana</option>
-															<option value="BV">Bouvet Island</option>
-															<option value="BR">Brazil</option>
-															<option value="IO">British Indian Ocean Territory</option>
-															<option value="BN">Brunei Darussalam</option>
-															<option value="BG">Bulgaria</option>
-															<option value="BF">Burkina Faso</option>
-															<option value="BI">Burundi</option>
-															<option value="KH">Cambodia</option>
-															<option value="CM">Cameroon</option>
-															<option value="CA">Canada</option>
-															<option value="CV">Cape Verde</option>
-															<option value="KY">Cayman Islands</option>
-															<option value="CF">Central African Republic</option>
-															<option value="TD">Chad</option>
-															<option value="CL">Chile</option>
-															<option value="CN">China</option>
-															<option value="CX">Christmas Island</option>
-															<option value="CC">Cocos (Keeling) Islands</option>
-															<option value="CO">Colombia</option>
-															<option value="KM">Comoros</option>
-															<option value="CG">Congo</option>
-															<option value="CD">Congo, the Democratic Republic of the</option>
-															<option value="CK">Cook Islands</option>
-															<option value="CR">Costa Rica</option>
-															<option value="CI">Cote d'Ivoire</option>
-															<option value="HR">Croatia (Hrvatska)</option>
-															<option value="CU">Cuba</option>
-															<option value="CY">Cyprus</option>
-															<option value="CZ">Czech Republic</option>
-															<option value="DK">Denmark</option>
-															<option value="DJ">Djibouti</option>
-															<option value="DM">Dominica</option>
-															<option value="DO">Dominican Republic</option>
-															<option value="EC">Ecuador</option>
-															<option value="EG">Egypt</option>
-															<option value="SV">El Salvador</option>
-															<option value="GQ">Equatorial Guinea</option>
-															<option value="ER">Eritrea</option>
-															<option value="EE">Estonia</option>
-															<option value="ET">Ethiopia</option>
-															<option value="FK">Falkland Islands (Malvinas)</option>
-															<option value="FO">Faroe Islands</option>
-															<option value="FJ">Fiji</option>
-															<option value="FI">Finland</option>
-															<option value="FR">France</option>
-															<option value="GF">French Guiana</option>
-															<option value="PF">French Polynesia</option>
-															<option value="TF">French Southern Territories</option>
-															<option value="GA">Gabon</option>
-															<option value="GM">Gambia</option>
-															<option value="GE">Georgia</option>
-															<option value="DE">Germany</option>
-															<option value="GH">Ghana</option>
-															<option value="GI">Gibraltar</option>
-															<option value="GR">Greece</option>
-															<option value="GL">Greenland</option>
-															<option value="GD">Grenada</option>
-															<option value="GP">Guadeloupe</option>
-															<option value="GU">Guam</option>
-															<option value="GT">Guatemala</option>
-															<option value="GN">Guinea</option>
-															<option value="GW">Guinea-Bissau</option>
-															<option value="GY">Guyana</option>
-															<option value="HT">Haiti</option>
-															<option value="HM">Heard and Mc Donald Islands</option>
-															<option value="VA">Holy See (Vatican City State)</option>
-															<option value="HN">Honduras</option>
-															<option value="HK">Hong Kong</option>
-															<option value="HU">Hungary</option>
-															<option value="IS">Iceland</option>
-															<option value="IN">India</option>
-															<option value="ID">Indonesia</option>
-															<option value="IR">Iran (Islamic Republic of)</option>
-															<option value="IQ">Iraq</option>
-															<option value="IE">Ireland</option>
-															<option value="IL">Israel</option>
-															<option value="IT">Italy</option>
-															<option value="JM">Jamaica</option>
-															<option value="JP">Japan</option>
-															<option value="JO">Jordan</option>
-															<option value="KZ">Kazakhstan</option>
-															<option value="KE">Kenya</option>
-															<option value="KI">Kiribati</option>
-															<option value="KP">Korea, Democratic People's Republic of</option>
-															<option value="KR">Korea, Republic of</option>
-															<option value="KW">Kuwait</option>
-															<option value="KG">Kyrgyzstan</option>
-															<option value="LA">Lao People's Democratic Republic</option>
-															<option value="LV">Latvia</option>
-															<option value="LB">Lebanon</option>
-															<option value="LS">Lesotho</option>
-															<option value="LR">Liberia</option>
-															<option value="LY">Libyan Arab Jamahiriya</option>
-															<option value="LI">Liechtenstein</option>
-															<option value="LT">Lithuania</option>
-															<option value="LU">Luxembourg</option>
-															<option value="MO">Macau</option>
-															<option value="MK">Macedonia, The Former Yugoslav Republic of</option>
-															<option value="MG">Madagascar</option>
-															<option value="MW">Malawi</option>
-															<option value="MY">Malaysia</option>
-															<option value="MV">Maldives</option>
-															<option value="ML">Mali</option>
-															<option value="MT">Malta</option>
-															<option value="MH">Marshall Islands</option>
-															<option value="MQ">Martinique</option>
-															<option value="MR">Mauritania</option>
-															<option value="MU">Mauritius</option>
-															<option value="YT">Mayotte</option>
-															<option value="MX">Mexico</option>
-															<option value="FM">Micronesia, Federated States of</option>
-															<option value="MD">Moldova, Republic of</option>
-															<option value="MC">Monaco</option>
-															<option value="MN">Mongolia</option>
-															<option value="MS">Montserrat</option>
-															<option value="MA">Morocco</option>
-															<option value="MZ">Mozambique</option>
-															<option value="MM">Myanmar</option>
-															<option value="NA">Namibia</option>
-															<option value="NR">Nauru</option>
-															<option value="NP">Nepal</option>
-															<option value="NL">Netherlands</option>
-															<option value="AN">Netherlands Antilles</option>
-															<option value="NC">New Caledonia</option>
-															<option value="NZ">New Zealand</option>
-															<option value="NI">Nicaragua</option>
-															<option value="NE">Niger</option>
-															<option value="NG">Nigeria</option>
-															<option value="NU">Niue</option>
-															<option value="NF">Norfolk Island</option>
-															<option value="MP">Northern Mariana Islands</option>
-															<option value="NO">Norway</option>
-															<option value="OM">Oman</option>
-															<option value="PK">Pakistan</option>
-															<option value="PW">Palau</option>
-															<option value="PA">Panama</option>
-															<option value="PG">Papua New Guinea</option>
-															<option value="PY">Paraguay</option>
-															<option value="PE">Peru</option>
-															<option value="PH">Philippines</option>
-															<option value="PN">Pitcairn</option>
-															<option value="PL">Poland</option>
-															<option value="PT">Portugal</option>
-															<option value="PR">Puerto Rico</option>
-															<option value="QA">Qatar</option>
-															<option value="RE">Reunion</option>
-															<option value="RO">Romania</option>
-															<option value="RU">Russian Federation</option>
-															<option value="RW">Rwanda</option>
-															<option value="KN">Saint Kitts and Nevis</option>
-															<option value="LC">Saint LUCIA</option>
-															<option value="VC">Saint Vincent and the Grenadines</option>
-															<option value="WS">Samoa</option>
-															<option value="SM">San Marino</option>
-															<option value="ST">Sao Tome and Principe</option>
-															<option value="SA">Saudi Arabia</option>
-															<option value="SN">Senegal</option>
-															<option value="SC">Seychelles</option>
-															<option value="SL">Sierra Leone</option>
-															<option value="SG">Singapore</option>
-															<option value="SK">Slovakia (Slovak Republic)</option>
-															<option value="SI">Slovenia</option>
-															<option value="SB">Solomon Islands</option>
-															<option value="SO">Somalia</option>
-															<option value="ZA">South Africa</option>
-															<option value="GS">South Georgia and the South Sandwich Islands</option>
-															<option value="ES">Spain</option>
-															<option value="LK">Sri Lanka</option>
-															<option value="SH">St. Helena</option>
-															<option value="PM">St. Pierre and Miquelon</option>
-															<option value="SD">Sudan</option>
-															<option value="SR">Suriname</option>
-															<option value="SJ">Svalbard and Jan Mayen Islands</option>
-															<option value="SZ">Swaziland</option>
-															<option value="SE">Sweden</option>
-															<option value="CH">Switzerland</option>
-															<option value="SY">Syrian Arab Republic</option>
-															<option value="TW">Taiwan, Province of China</option>
-															<option value="TJ">Tajikistan</option>
-															<option value="TZ">Tanzania, United Republic of</option>
-															<option value="TH">Thailand</option>
-															<option value="TG">Togo</option>
-															<option value="TK">Tokelau</option>
-															<option value="TO">Tonga</option>
-															<option value="TT">Trinidad and Tobago</option>
-															<option value="TN">Tunisia</option>
-															<option value="TR">Turkey</option>
-															<option value="TM">Turkmenistan</option>
-															<option value="TC">Turks and Caicos Islands</option>
-															<option value="TV">Tuvalu</option>
-															<option value="UG">Uganda</option>
-															<option value="UA">Ukraine</option>
-															<option value="AE">United Arab Emirates</option>
-															<option value="GB">United Kingdom</option>
-															<option value="US">United States</option>
-															<option value="UM">United States Minor Outlying Islands</option>
-															<option value="UY">Uruguay</option>
-															<option value="UZ">Uzbekistan</option>
-															<option value="VU">Vanuatu</option>
-															<option value="VE">Venezuela</option>
-															<option value="VN">Viet Nam</option>
-															<option value="VG">Virgin Islands (British)</option>
-															<option value="VI">Virgin Islands (U.S.)</option>
-															<option value="WF">Wallis and Futuna Islands</option>
-															<option value="EH">Western Sahara</option>
-															<option value="YE">Yemen</option>
-															<option value="ZM">Zambia</option>
-															<option value="ZW">Zimbabwe</option>
-														</select>
+	                                                    <span class="help-block">
+														Selecione o tipo sanguineo do Paciente </span>
 													</div>
 												</div>
 											</div>
 											<div class="tab-pane" id="tab3">
-												<h3 class="block">Provide your billing and credit card details</h3>
+												<h3 class="block">Informe os dados do endereco do Paciente</h3>
 												<div class="form-group">
-													<label class="control-label col-md-3">Card Holder Name <span class="required">
+													<label class="control-label col-md-3">CEP<span class="required">
 													* </span>
 													</label>
 													<div class="col-md-4">
-														<input type="text" class="form-control" name="card_name"/>
-														<span class="help-block">
+														<input type="text" placeholder="00000-000" maxlength="8" class="form-control" name="cep"/>
+														<span class="help-block"> Digite o CEP e.g 12345-678
 														</span>
 													</div>
 												</div>
 												<div class="form-group">
-													<label class="control-label col-md-3">Card Number <span class="required">
+													<label class="control-label col-md-3">Endereco <span class="required">
 													* </span>
 													</label>
 													<div class="col-md-4">
-														<input type="text" class="form-control" name="card_number"/>
-														<span class="help-block">
+														<input type="text" class="form-control" name="endereco"/>
+														<span class="help-block"> Digite o Endereco com numero
 														</span>
 													</div>
 												</div>
 												<div class="form-group">
-													<label class="control-label col-md-3">CVC <span class="required">
+													<label class="control-label col-md-3">Cidade <span class="required">
 													* </span>
 													</label>
 													<div class="col-md-4">
-														<input type="text" placeholder="" class="form-control" name="card_cvc"/>
+														<input type="text" class="form-control" name="cidade"/>
 														<span class="help-block">
+														Digite a Cidade </span>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">Estado <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-4">
+														<input type="text" placeholder="" class="form-control" name="estado"/>
+														<span class="help-block"> Digite o Estado
 														</span>
 													</div>
-												</div>
-												<div class="form-group">
-													<label class="control-label col-md-3">Expiration(MM/YYYY) <span class="required">
-													* </span>
-													</label>
-													<div class="col-md-4">
-														<input type="text" placeholder="MM/YYYY" maxlength="7" class="form-control" name="card_expiry_date"/>
-														<span class="help-block">
-														e.g 11/2020 </span>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="control-label col-md-3">Payment Options <span class="required">
-													* </span>
-													</label>
-													<div class="col-md-4">
-														<div class="checkbox-list">
-															<label>
-															<input type="checkbox" name="payment[]" value="1" data-title="Auto-Pay with this Credit Card."/> Auto-Pay with this Credit Card </label>
-															<label>
-															<input type="checkbox" name="payment[]" value="2" data-title="Email me monthly billing."/> Email me monthly billing </label>
-														</div>
-														<div id="form_payment_error">
-														</div>
-													</div>
-												</div>
+												</div>												
 											</div>
 											<div class="tab-pane" id="tab4">
 												<h3 class="block">Confirme seu cadastro</h3>
@@ -1002,80 +459,59 @@
 													</div>
 												</div>
 												<div class="form-group">
-													<label class="control-label col-md-3">z:</label>
+													<label class="control-label col-md-3">CPF:</label>
+													<div class="col-md-4">
+														<p class="form-control-static" data-display="paciente.cpf">
+														</p>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">Genero:</label>
 													<div class="col-md-4">
 														<p class="form-control-static" data-display="paciente.genero">
 														</p>
 													</div>
 												</div>
 												<div class="form-group">
-													<label class="control-label col-md-3">Phone:</label>
+													<label class="control-label col-md-3">Codigo do Registro:</label>
 													<div class="col-md-4">
-														<p class="form-control-static" data-display="phone">
+														<p class="form-control-static" data-display="paciente.codigoRegistro">
 														</p>
 													</div>
 												</div>
 												<div class="form-group">
-													<label class="control-label col-md-3">Address:</label>
+													<label class="control-label col-md-3">Tipo Sanguineo:</label>
 													<div class="col-md-4">
-														<p class="form-control-static" data-display="address">
+														<p class="form-control-static" data-display="paciente.tipoSanguineo">
+														</p>
+													</div>
+												</div>
+												<h4 class="form-section">Endereco</h4>
+												<div class="form-group">
+													<label class="control-label col-md-3">CEP:</label>
+													<div class="col-md-4">
+														<p class="form-control-static" data-display="cep">
 														</p>
 													</div>
 												</div>
 												<div class="form-group">
-													<label class="control-label col-md-3">City/Town:</label>
+													<label class="control-label col-md-3">Endereco:</label>
 													<div class="col-md-4">
-														<p class="form-control-static" data-display="city">
+														<p class="form-control-static" data-display="endereco">
 														</p>
 													</div>
 												</div>
 												<div class="form-group">
-													<label class="control-label col-md-3">Country:</label>
+													<label class="control-label col-md-3">Cidade:</label>
 													<div class="col-md-4">
-														<p class="form-control-static" data-display="country">
+														<p class="form-control-static" data-display="cidade">
 														</p>
 													</div>
 												</div>
 												<div class="form-group">
-													<label class="control-label col-md-3">Remarks:</label>
+													<label class="control-label col-md-3">Estado:</label>
 													<div class="col-md-4">
-														<p class="form-control-static" data-display="remarks">
-														</p>
-													</div>
-												</div>
-												<h4 class="form-section">Billing</h4>
-												<div class="form-group">
-													<label class="control-label col-md-3">Card Holder Name:</label>
-													<div class="col-md-4">
-														<p class="form-control-static" data-display="card_name">
-														</p>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="control-label col-md-3">Card Number:</label>
-													<div class="col-md-4">
-														<p class="form-control-static" data-display="card_number">
-														</p>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="control-label col-md-3">CVC:</label>
-													<div class="col-md-4">
-														<p class="form-control-static" data-display="card_cvc">
-														</p>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="control-label col-md-3">Expiration:</label>
-													<div class="col-md-4">
-														<p class="form-control-static" data-display="card_expiry_date">
-														</p>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="control-label col-md-3">Payment Options:</label>
-													<div class="col-md-4">
-														<p class="form-control-static" data-display="payment">
+														<p class="form-control-static" data-display="estado">
 														</p>
 													</div>
 												</div>

@@ -1,37 +1,33 @@
 package br.com.pep.integration;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
+import javax.ws.rs.client.Entity;
+import javax.ws.rs.core.Response;
 
-import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.message.BasicNameValuePair;
+import org.jboss.resteasy.client.jaxrs.ResteasyClient;
+import org.jboss.resteasy.client.jaxrs.ResteasyClientBuilder;
+import org.jboss.resteasy.client.jaxrs.ResteasyWebTarget;
 
-import br.com.pep.message.Paciente;
-
+import br.com.pep.message.PacienteVO;
 
 public class AddPacienteCommand {
 
 	private String urlService;
-	
-	public Paciente Execute(Paciente paciente) throws ClientProtocolException, IOException {
 
-		HttpClient client = HttpClientBuilder.create().build();
-		HttpPost request = new HttpPost(getUrlService());
+	public PacienteVO Execute(PacienteVO paciente) {
 		
-		List<NameValuePair> urlParameters = new ArrayList<NameValuePair>();
-		urlParameters.add(new BasicNameValuePair("Paciente", ""));
-		request.setEntity(new UrlEncodedFormEntity(urlParameters));		
-		HttpResponse response = client.execute(request);
-		InputStream content = response.getEntity().getContent();
-		return null;
+		PacienteVO newPaciente = new PacienteVO();
+		
+		ResteasyClient client = new ResteasyClientBuilder().build();
+		ResteasyWebTarget target = client.target(getUrlService());
+		Response response = target.request().post(Entity.entity(paciente, "application/xml"));
+		
+		if (response.getStatus() != 200) {
+			newPaciente = response.readEntity(PacienteVO.class);
+			throw new RuntimeException("Failed : HTTP error code : " + response.getStatus() +"\n" );
+		}		
+		
+		newPaciente = response.readEntity(PacienteVO.class);		
+		return newPaciente;
 	}
 	
 	public String getUrlService() {
@@ -40,5 +36,5 @@ public class AddPacienteCommand {
 
 	public void setUrlService(String urlService) {
 		this.urlService = urlService;
-	}	
+	}		
 }

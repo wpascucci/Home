@@ -1,12 +1,11 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>br.com.pep</groupId>
   <artifactId>PEPWeb</artifactId>
-  <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>ProntuarioWeb Maven Webapp</name>
-  <url>http://maven.apache.org</url>
+  <packaging>war</packaging>
+  <name>PEPWeb</name>
+  <url>http://maven.apache.org</url>  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -40,12 +39,37 @@
 	    <version>1.7.5</version>
 	</dependency>
 	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-validator-cdi</artifactId>
+	    <version>5.1.1.Final</version>
+	</dependency>	
+<!--     <dependency> -->
+<!--         <groupId>br.com.caelum.vraptor</groupId> -->
+<!--         <artifactId>vraptor-jpa</artifactId> -->
+<!--         <version>4.0.0.Final</version> -->
+<!--     </dependency> -->
+<!-- 	<dependency> -->
+<!-- 		<groupId>org.hibernate</groupId> -->
+<!-- 		<artifactId>hibernate-entitymanager</artifactId> -->
+<!-- 		<version>4.3.6.Final</version> -->
+<!-- 	</dependency> -->
+	<dependency>
 		<groupId>javax.servlet</groupId>
 		<artifactId>jstl</artifactId>
 		<version>1.2</version>
-	</dependency>    
+	</dependency>
+<!-- 	<dependency> -->
+<!-- 		<groupId>mysql</groupId> -->
+<!-- 		<artifactId>mysql-connector-java</artifactId> -->
+<!-- 		<version>5.1.31</version> -->
+<!-- 	</dependency>		 -->
+	<dependency>
+		<groupId>br.com.pep</groupId>
+		<artifactId>PEPIntegration</artifactId>
+		<version>0.0.1-SNAPSHOT</version>	
+	</dependency>
   </dependencies>
   <build>
     <finalName>ProntuarioWeb</finalName>
-  </build>
+  </build>   
 </project>

@@ -8,10 +8,10 @@
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="Id" type="xs:int"/>
-				<xs:element name="Cpf" type="xs:int"/>
+				<xs:element name="Cpf" type="xs:string"/>
 				<xs:element name="Nome" type="xs:string"/>
 				<xs:element name="Genero" type="xs:string"/>
-				<xs:element name="CodigoRegistro" type="xs:int"/>
+				<xs:element name="CodigoRegistro" type="xs:string"/>
 				<xs:element name="TipoSanguineo" type="xs:string"/>
 				<xs:element name="Enderecos" maxOccurs="unbounded">
 					<xs:complexType>

@@ -1,6 +1,7 @@
 package br.com.pep.persistence.domain;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -13,8 +14,11 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
 @Entity
 @Table(name="tb_paciente")
+@XStreamAlias(value="paciente")
 public class Paciente implements Serializable {
 	
 	/**
@@ -31,10 +35,12 @@ public class Paciente implements Serializable {
 	private String tipoSanguineo;
 		
 	@OneToMany(mappedBy="paciente",targetEntity=Endereco.class,fetch=FetchType.LAZY,cascade=CascadeType.ALL,orphanRemoval=true)
-	private List<Endereco> endereco;
+	@XStreamAlias(value="enderecos")
+	private List<Endereco> enderecos = new ArrayList<Endereco>();
 	
 	@OneToMany(mappedBy="paciente",targetEntity=TelefonePaciente.class,fetch=FetchType.LAZY,cascade=CascadeType.ALL,orphanRemoval=true)
-	private List<TelefonePaciente> telefones;
+	@XStreamAlias("telefones")
+	private List<TelefonePaciente> telefones = new ArrayList<TelefonePaciente>();
 	
 	@OneToOne(mappedBy="paciente")
 	private Prontuario prontuario;
@@ -75,11 +81,11 @@ public class Paciente implements Serializable {
 	public void setTipoSanguineo(String tipoSanguineo) {
 		this.tipoSanguineo = tipoSanguineo;
 	}
-	public List<Endereco> getEndereco() {
-		return endereco;
+	public List<Endereco> getEnderecos() {
+		return enderecos;
 	}
-	public void setEndereco(List<Endereco> endereco) {
-		this.endereco = endereco;
+	public void setEnderecos(List<Endereco> enderecos) {
+		this.enderecos = enderecos;
 	}
 	public List<TelefonePaciente> getTelefones() {
 		return telefones;
